@@ -1,0 +1,22 @@
+.aquaboy-button {
+    padding: 10px 5px;
+    color: black;
+    border: 1px solid black;
+    background: transparent;
+    cursor: pointer;
+}
+
+.lg {
+    padding: 15px 7px;
+    font-size: 1.2em;
+}
+
+.sm {
+    padding: 8px 4px;
+    font-size: .9em;
+}
+
+.xs {
+    padding: 6px 3px;
+    font-size: .7em;
+}

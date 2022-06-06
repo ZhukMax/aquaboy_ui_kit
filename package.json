@@ -1,0 +1,41 @@
+{
+  "name": "aquaboy-ui-kit",
+  "version": "0.1.0",
+  "description": "React UI kit",
+  "main": "./dist/index.js",
+  "scripts": {
+    "patch": "webpack && npm version patch && npm publish",
+    "minor": "webpack && npm version minor && npm publish",
+    "major": "webpack && npm version major && npm publish",
+  },
+  "keywords": [
+    "ui",
+    "ui-kit",
+    "react",
+    "reactjs",
+    "react.js"
+  ],
+  "author": "ZhukMax <mail@zhukmax.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "babel-loader": "^8.2.5",
+    "classnames": "^2.3.1",
+    "css-loader": "^6.7.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.2",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {}
+}
