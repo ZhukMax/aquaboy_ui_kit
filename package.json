@@ -9,7 +9,7 @@
     "major": "webpack && npm version major && npm publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "docs": "build-storybook --docs -o ./docs-build -s ./stories/assets"
+    "docs": "build-storybook --docs -o ./docs-build -s ./src/stories/assets"
   },
   "keywords": [
     "ui",
