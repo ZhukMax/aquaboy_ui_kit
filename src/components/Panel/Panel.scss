@@ -1,0 +1,80 @@
+@import "../../assets/styles/colors";
+
+@mixin panel_mode($color, $textColor: $white) {
+    border-color: $color;
+
+    header {
+        color: $textColor;
+        background-color: $color;
+        border-color: $color;
+    }
+}
+
+.aquaboy-panel {
+    margin-bottom: 20px;
+    background-color: $white;
+    border: 1px solid transparent {
+        radius: 4px;
+    }
+    color: $textGrey;
+
+    header {
+        padding: 10px 15px;
+        border: {
+            bottom: 1px solid transparent;
+            top-left-radius: 3px;
+            top-right-radius: 3px;
+        }
+    }
+
+    &-body {
+        padding: 15px;
+        box-sizing: border-box;
+
+        p {
+            margin: {
+                top: 0;
+                bottom: 1rem;
+            }
+        }
+    }
+
+    footer {
+        padding: 10px 15px;
+        border: {
+            top: 1px solid $defaultBorder;
+            bottom-left-radius: 3px;
+            bottom-right-radius: 3px;
+        }
+    }
+
+    &-default {
+        border-color: $defaultBorder;
+
+        header {
+            color: $defaultGrey;
+            background-color: $defaultBackground;
+            border-color: $defaultBorder;
+        }
+    }
+
+    &-primary {
+        @include panel_mode($primary);
+    }
+
+    &-success {
+        @include panel_mode($success);
+    }
+
+    &-info {
+        @include panel_mode($info);
+    }
+
+    &-warning {
+        @include panel_mode($warning);
+    }
+
+    &-danger {
+        @include panel_mode($danger);
+    }
+}

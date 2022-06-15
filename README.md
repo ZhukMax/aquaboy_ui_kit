@@ -1,5 +1,6 @@
-# Aquaboy UI kit
+# Aquaboy React UI kit
 [![Software License][ico-license]](LICENSE)
+[![npm version](https://img.shields.io/npm/v?style=flat-square)](https://www.npmjs.com/package/)
 
 ## Install
 
@@ -12,6 +13,10 @@ yarn add aquaboy-ui-kit
 ```console
 npm i --save aquaboy-ui-kit
 ```
+
+## Documentation
+
+You can find the Aquaboy React UI documentation [on the website](https://zhukmax.github.io/aquaboy_ui_kit/).
 
 ## Change log
 
