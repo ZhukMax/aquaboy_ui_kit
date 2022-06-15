@@ -1,0 +1,111 @@
+@import "../../assets/styles/colors";
+
+@mixin button_mode($color, $bg, $border) {
+    color: $color;
+    background-color: $bg;
+    border: {
+        width: 1px;
+        style: solid;
+        color: $border;
+    }
+}
+
+.aquaboy-btn {
+    display: inline-block;
+    font: {
+        size: 13px;
+        weight: 400;
+    }
+    border: {
+        radius: 3px;
+        color: transparent;
+    }
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    cursor: pointer;
+
+    &-default {
+        @include button_mode($darkGrey, $white, $defaultBorder);
+
+        &:hover {
+            border-color: $defaultBorderHover;
+        }
+    }
+    &-primary {
+        @include button_mode($white, $primary, $primary);
+
+        &-outline {
+            @include button_mode($primary, $white, $primary);
+        }
+
+        &:hover,
+        &-outline:hover {
+            @include button_mode($white, $primaryHover, $primaryHover);
+        }
+    }
+    &-success {
+        @include button_mode($white, $success, $success);
+
+        &-outline {
+            @include button_mode($success, $white, $success);
+        }
+
+        &:hover,
+        &-outline:hover {
+            @include button_mode($white, $successHover, $successHover);
+        }
+    }
+    &-info {
+        @include button_mode($white, $info, $info);
+
+        &-outline {
+            @include button_mode($info, $white, $info);
+        }
+
+        &:hover,
+        &-outline:hover {
+            @include button_mode($white, $infoHover, $infoHover);
+        }
+    }
+    &-warning {
+        @include button_mode($white, $warning, $warning);
+
+        &-outline {
+            @include button_mode($warning, $white, $warning);
+        }
+
+        &:hover,
+        &-outline:hover {
+            @include button_mode($white, $warningHover, $warningHover);
+        }
+    }
+    &-danger {
+        @include button_mode($white, $danger, $danger);
+
+        &-outline {
+            @include button_mode($danger, $white, $danger);
+        }
+
+        &:hover,
+        &-outline:hover {
+            @include button_mode($white, $dangerHover, $dangerHover);
+        }
+    }
+
+    &-mini-size {
+        padding: 3px 6px;
+        font-size: 11px;
+    }
+    &-small-size {
+        padding: 4px 8px;
+    }
+    &-default-size {
+        min-width: 120px;
+        padding: 6px 12px;
+    }
+    &-large-size {
+        min-width: 120px;
+        padding: 8px 16px;
+    }
+}
