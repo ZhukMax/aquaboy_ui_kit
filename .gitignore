@@ -1,4 +1,16 @@
+# PhpStorm
 .idea/
-dist/
+
+# Dependency directories
 node_modules/
 package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+dist/
+build/
