@@ -8,14 +8,16 @@
     "minor": "webpack && npm version minor && npm publish",
     "major": "webpack && npm version major && npm publish",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "docs": "build-storybook --docs -o ./docs-build -s ./stories/assets"
   },
   "keywords": [
     "ui",
     "ui-kit",
     "react",
     "reactjs",
-    "react.js"
+    "react.js",
+    "aquaboy"
   ],
   "author": "ZhukMax <mail@zhukmax.com>",
   "license": "Apache-2.0",
@@ -36,6 +38,7 @@
     "css-loader": "^6.7.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-select": "^5.3.2",
     "sass": "^1.52.2",
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1",
