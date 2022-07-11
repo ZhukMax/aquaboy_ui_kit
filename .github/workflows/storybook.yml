@@ -1,13 +1,14 @@
-name: Build and Deploy
+name: Build and Deploy storybook
 on:
   push:
     paths: ["src/stories/**", "src/components/**"]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
       - name: Install and Build 🔧
@@ -15,7 +16,7 @@ jobs:
           npm install
           npm run docs
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: main
