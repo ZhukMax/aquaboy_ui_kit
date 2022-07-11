@@ -1,0 +1,13 @@
+@import "../../assets/styles/colors";
+
+@mixin aquaboy_font($weight) {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: {
+    size: 13px;
+    weight: $weight;
+  }
+}
+
+body {
+  color: $textGrey;
+}

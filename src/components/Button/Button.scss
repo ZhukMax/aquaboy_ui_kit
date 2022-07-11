@@ -1,4 +1,5 @@
 @import "../../assets/styles/colors";
+@import "../../assets/styles/text";
 
 @mixin button_mode($color, $bg, $border) {
     color: $color;
@@ -12,10 +13,7 @@
 
 .aquaboy-btn {
     display: inline-block;
-    font: {
-        size: 13px;
-        weight: 400;
-    }
+    @include aquaboy_font(400);
     border: {
         radius: 3px;
         color: transparent;

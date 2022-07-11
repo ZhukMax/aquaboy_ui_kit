@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import classNames from "classnames";
-import {Mode, ModeProp, Props} from "../../interfaces";
+import { Mode, ModeProp, Props } from "../../interfaces";
 
-import './Panel.scss';
+import './styles.scss';
 
 export interface PanelProps extends Props, ModeProp {
   title: string;

@@ -1,7 +1,7 @@
 import React from "react";
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {Panel} from "../index";
-import {Mode} from "../interfaces";
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Panel } from "../index";
+import { Mode } from "../interfaces";
 
 export default {
   title: 'Aquaboy/Panel',

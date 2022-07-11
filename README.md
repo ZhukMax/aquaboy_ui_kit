@@ -16,7 +16,7 @@ npm i --save aquaboy-ui-kit
 
 ## Documentation
 
-You can find the Aquaboy React UI documentation [on the website](https://zhukmax.github.io/aquaboy_ui_kit/).
+You can find the Aquaboy React UI documentation <a href="https://zhukmax.github.io/aquaboy_ui_kit/" target="_blank">on the website</a>.
 
 ## Change log
 

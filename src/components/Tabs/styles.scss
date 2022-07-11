@@ -1,0 +1,82 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/text";
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+  //border-bottom: 1px solid $defaultBorder;
+  @include aquaboy_font(400);
+
+  &__tab-list {
+    margin-top: 0;
+    margin-block-end: 0;
+  }
+
+  &__tab {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    float: left;
+    margin-bottom: -1px;
+    background: none;
+    text-align: -webkit-match-parent;
+    display: block;
+    color: $textNonactive;
+    cursor: pointer;
+
+    &:hover {
+      color: $textActive;
+    }
+
+    &--selected {
+      background: $white;
+      border-color: #dee2e6 #dee2e6 $white;
+      color: $textActive;
+      border-radius: 5px 5px 0 0;
+    }
+
+    &--disabled {
+      color: $textNonactive;
+      cursor: default;
+
+      &:hover {
+        color: $textNonactive !important;
+      }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+    background: $white;
+    border: 1px solid $defaultBorder;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+
+    &--selected {
+      display: block;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    box-sizing: border-box;
+    font-weight: 600;
+    padding: 10px 20px 10px 25px;
+  }
+}
